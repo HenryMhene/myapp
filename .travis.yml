@@ -6,9 +6,15 @@ cache:
   - node_modules
 script:
   - npm test
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+    deploy:
+      - provider: s3
+        ⋮ 
+      - provider: codedeploy
+        access_key_id: $AWS_ACCESS_KEY
+        secret_access_key: $AWS_SECRET_KEY"
+        bucket: "my-app-henry"
+        key: latest/MyApp.zip
+        application: my-app
+        deployment_group: my-app-group
+        on:
+          branch: master

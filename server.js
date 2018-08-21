@@ -11,3 +11,5 @@ var express = require('express'),
 app.listen(port);
 
 console.log('myapp API server started on: ' + port);
+
+module.exports = app; // for testing

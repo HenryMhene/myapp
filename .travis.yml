@@ -6,15 +6,16 @@ cache:
   - node_modules
 script:
   - npm test
-    deploy:
-      - provider: s3
-        ⋮ 
-      - provider: codedeploy
-        access_key_id: $AWS_ACCESS_KEY
-        secret_access_key: $AWS_SECRET_KEY"
-        bucket: "my-app-henry"
-        key: latest/MyApp.zip
-        application: my-app
-        deployment_group: my-app-group
-        on:
-          branch: master
+deploy:
+  provider: codedeploy
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY"
+  bucket: "my-app-henry"
+  key: latest/MyApp.zip
+  bundle_type: zip
+  application: my-app
+  deployment_group: my-app-group
+  region: ap-southeast-2
+  on:
+    branch: master
+

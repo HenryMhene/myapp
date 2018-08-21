@@ -4,8 +4,8 @@
   "description": "my app api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "mocha"
   },
   "author": "henry mhene",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
   }
 }

@@ -5,12 +5,12 @@ cache:
   directories:
   - node_modules
 script:
-  # - npm test
+   - npm test
 deploy:
   - provider: codedeploy
     revision_type: github
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY"
+    access_key_id: AKIAJVQF65FE633C2KSQ
+    secret_access_key: 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
     application: my-app
     deployment_group: my-app-group
     region: ap-southeast-2

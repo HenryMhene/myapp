@@ -2,7 +2,7 @@
 module.exports = function(app) {
   var hello = require('../controllers/helloController');
 
-  // hello Routes
+  // Routes
   app.route('/')
     .get(hello.hello_world);
 

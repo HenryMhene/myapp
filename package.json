@@ -4,7 +4,8 @@
   "description": "my app api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "mocha --exit"
   },
   "author": "henry mhene",
   "license": "ISC",

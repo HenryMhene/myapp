@@ -6,24 +6,24 @@ cache:
   - node_modules
 script:
    - npm test
+before_deploy:
+  - zip -r MyApp.zip .
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY 
     secret_access_key: $AWS_SECRET_KEY
     bucket: "my-app-henry"
-    key: latest/MyApp.zip
     region: ap-southeast-2
     skip_cleanup: true
     acl: public_read
     detect_encoding: true
     on:
      branch: master
-
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: "my-app-henry"
-    key: latest/MyApp.zip
+    key: MyApp.zip
     application: my-app
     deployment_group: my-app-group
     region: ap-southeast-2

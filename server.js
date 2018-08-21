@@ -12,4 +12,4 @@ app.listen(port);
 
 console.log('myapp API server started on: ' + port);
 
-module.exports = app; // for testing
+module.exports = app; // for testing app

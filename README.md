@@ -1,4 +1,4 @@
-# My App - henry Mhene
+# My App - Henry Mhene
 
 ## Getting Started
 ```

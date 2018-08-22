@@ -7,7 +7,7 @@ My App is a node api that exposes 3 endpoints to allow users:
   - get a healthcheck status response - http://myapp.mhene.com:3000/healthcheck
   - get the apps metadata with the latest commit hash - http://myapp.mhene.com:3000/metadata
 ```
-The app makes use of express.js running on node to route the users requests using a controller called hello controller under the api/controllers folder. When a developer commits new code and pushes it to github the travis.yml file triggers Travis CI to initiate a build. I could have used jenkins for this but Travis is quicker and easier to get up and running. Travis CI then runs through the tests and if successful it deploys to AWS using AWS CodeDeploy service. When you check the apps metadata it will contain the new commit hash dynamically collected.
+The app makes use of express.js running on node to route the users requests using a controller called hello controller under the api/controllers folder. When a developer commits new code and pushes it to github the travis.yml file triggers Travis CI to initiate a build. I could have used jenkins for this but Travis is quicker and easier to get up and running. Travis CI then runs through the tests and if successful it deploys to AWS using AWS CodeDeploy service using AWS S3 as the deployement artifacts location. When you check the apps metadata it will contain the new commit hash dynamically collected.
 
 
 ### Prerequisites

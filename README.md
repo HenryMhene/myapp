@@ -12,7 +12,7 @@ npm
 ### Installing
 ```
 Run npm install - to install all necessary node_modules for the app to run
-Run npm ryn start - to start a server on port 3000. Make sure the port is free before starting
+Run npm run start - to start a server on port 3000. Make sure the port is free before starting
 ```
 ## Running the tests
 

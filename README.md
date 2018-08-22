@@ -1,7 +1,11 @@
 # My App - henry Mhene
 
 ## Getting Started
-
+```
+http://myapp.mhene.com:3000/
+http://myapp.mhene.com:3000/healthcheck
+http://myapp.mhene.com:3000/metadata
+```
 ### Prerequisites
 
 ```

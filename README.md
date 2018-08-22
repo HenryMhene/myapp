@@ -1,4 +1,4 @@
-# Project Title
+# My App - henry Mhene
 
 ## Getting Started
 

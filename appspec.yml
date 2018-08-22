@@ -9,4 +9,4 @@ permissions:
     owner: ec2-user
 hooks:
   AfterInstall:
-    - location: /home/ec2-user/app/scripts/afterinstall.sh
+    - location: /scripts/afterinstall.sh

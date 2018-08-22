@@ -1,17 +1,11 @@
 # My App - henry Mhene
 
+## Getting Started
 ```
 My App is a node api that exposes 3 endpoints to allow users:
   - get a hello world response - http://myapp.mhene.com:3000/
   - get a healthcheck status response - http://myapp.mhene.com:3000/healthcheck
   - get the apps metadata with the latest commit hash - http://myapp.mhene.com:3000/metadata
-```
-
-## Getting Started
-```
-http://myapp.mhene.com:3000/
-http://myapp.mhene.com:3000/healthcheck
-http://myapp.mhene.com:3000/metadata
 ```
 ### Prerequisites
 

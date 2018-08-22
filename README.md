@@ -31,7 +31,7 @@ npm run test
 
 Used Github and Travis CI for building the app 
 
-Used AWS CodeDeploy and AWS S3 for deploying the app to a server 
+Used AWS CodeDeploy and AWS S3 for deploying the app to a t2 micro server exposing port 3000 only
 
 Used AWS EC2 server to run the app
 

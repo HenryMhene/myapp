@@ -6,6 +6,7 @@ require('child_process').exec('git rev-parse HEAD', function(err, res) {
     commithash = res;
 });
 
+//hello world endpoint
 exports.hello_world = function (req, res) {
     res.json('hello world');
 };
